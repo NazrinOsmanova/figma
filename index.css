@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 1400px;
+    height: 1046px;
+    margin: 0px auto;
+}
+
+section .center {
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 70px;
+}
+
+section .div1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .div1 .left {
+    width: 55%;
+}
+
+section .div1 .left h1 {
+    font-size: 55px;
+    margin-bottom: 55px;
+}
+
+section .div1 .left p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0px 0px 45px;
+    line-height: 36px;
+}
+
+section .div2 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+section .div2 img {
+    width: 232px;
+    height: 203px;
+}
+
+section .div2 div h5 {
+    font-size: 25px;
+}
+
+section .div2 div p {
+    font-size: 18px;
+    width: 150px;
+}
+
+@media screen and (max-width: 830px) and (min-width: 376px) {
+    section {
+        width: 100%;
+        height: 633px;
+    }
+
+    section .div1 .left h1 {
+        font-size: 32px;
+    }
+
+    section .div1 .left p {
+        margin: 0px 0px 20px;
+        font-size: 14px;
+    }
+
+    section .div2 {
+        width: 50%;
+    }
+
+    section .div2 img {
+        display: none;
+    }
+
+    section .div2 div h5 {
+        font-size: 15px;
+    }
+
+    section .div2 div p {
+        width: 90px;
+        font-size: 11px;
+    }
+
+    section .center .div1 img {
+        width: 181px;
+        height: 182px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        height: 776px;
+    }
+
+    section .center {
+        width: 95%;
+        padding-top: 30px;
+    }
+
+    section .center .div1 {
+        flex-direction: column;
+    }
+
+    section .center .div1 .left {
+        width: 100%;
+    }
+
+    section .center .div1 .left h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    section .center .div1 .left p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    section .center .div1 .left img {
+        width: 146px;
+        height: 146px;
+    }
+
+    section .center .div2 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    section .center .div2 img {
+        display: none;
+    }
+
+    section .center .div2 div {
+        width: 40%;
+        margin-top: 30px;
+    }
+
+    section .center .div2 div h5 {
+        font-size: 12px;
+    }
+
+    section .center .div2 div p {
+        width: 85px;
+        font-size: 10px;
+    }
+}
