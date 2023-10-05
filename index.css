@@ -1,162 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
-section {
-    width: 1400px;
-    height: 1046px;
-    margin: 0px auto;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 section .center {
     width: 90%;
     margin: 0px auto;
-    padding-top: 70px;
 }
 
-section .div1 {
-    width: 100%;
+section {
+    margin: 0 auto;
+}
+
+.center .left h1 {
+    font-family: Roboto Slab;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 81.108px;
+    margin: 29px 0px 18px 0px;
+}
+
+.center .left p {
+    width: 60%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.center img {
+    width: 22%;
+}
+
+.center .div1 {
+    width: 94%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-section .div1 .left {
-    width: 55%;
-}
-
-section .div1 .left h1 {
+.center .div1 .left h3 {
     font-size: 55px;
-    margin-bottom: 55px;
+    font-family: Roboto Slab;
+    font-weight: 700;
+    line-height: 55.762px;
+    margin: 55px 0px 30px 0px;
 }
 
-section .div1 .left p {
+.center .div1 .left p {
     font-size: 24px;
     font-weight: 400;
     margin: 0px 0px 45px;
     line-height: 36px;
+    font-family: Roboto;
 }
 
-section .div2 {
+.center .div2 {
     width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    font-family: Roboto;
 }
 
-section .div2 img {
-    width: 232px;
-    height: 203px;
+.center .div2 img {
+    width: 20%;
 }
 
-section .div2 div h5 {
+.center .div2 div h5 {
     font-size: 25px;
+    font-weight: 700;
+    line-height: 32.5px;
 }
 
-section .div2 div p {
+.center .div2 div p {
     font-size: 18px;
     width: 150px;
+    font-weight: 400;
+    line-height: 23.4px;
 }
 
-@media screen and (max-width: 830px) and (min-width: 376px) {
-    section {
-        width: 100%;
-        height: 633px;
+@media screen and (min-width: 830px) and (max-width: 1400px) {
+    .center .div1 {
+        width: 93%;
     }
 
-    section .div1 .left h1 {
+    .center .div1 img {
+        width: 32%;
+    }
+
+    .center .div1 .left h3 {
         font-size: 32px;
+        line-height: 32.443px;
     }
 
-    section .div1 .left p {
+    .center .div1 .left p {
         margin: 0px 0px 20px;
         font-size: 14px;
+        line-height: 21px;
     }
 
-    section .div2 {
-        width: 50%;
+    .center .div2 {
+        width: 45%;
+        margin-top: 54px;
     }
 
-    section .div2 img {
+    .center .div2 img {
         display: none;
     }
 
-    section .div2 div h5 {
+    .center .div2 div h5 {
         font-size: 15px;
+        line-height: 19.5px;
     }
 
-    section .div2 div p {
-        width: 90px;
+    .center .div2 div p {
         font-size: 11px;
+        line-height: 14.3px;
+        width: 90px;
     }
 
-    section .center .div1 img {
-        width: 181px;
-        height: 182px;
-        margin-top: 40px;
+    .center .left h1 {
+        font-size: 46px;
+        line-height: 46.637px;
     }
 }
 
-@media screen and (max-width: 375px) {
-    section {
-        height: 776px;
+@media screen and (min-width: 375px) and (max-width: 830px) {
+    .center {
+        margin: 44.6px 0px 38.6px 0px;
     }
 
-    section .center {
+    .center .bottom {
         width: 95%;
-        padding-top: 30px;
     }
 
-    section .center .div1 {
-        flex-direction: column;
-    }
-
-    section .center .div1 .left {
+    .center .left p {
         width: 100%;
     }
 
-    section .center .div1 .left h1 {
+    .center .div1 {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .center .div1 img {
+        align-self: center;
+    }
+
+    .center .div1 img {
+        width: 181px;
+        height: 182px;
+    }
+
+    .center .div1 .left {
+        width: 100%;
+    }
+
+    .center .div1 .left h3 {
         font-size: 26px;
-        margin-bottom: 20px;
+        line-height: 26.3px;
     }
 
-    section .center .div1 .left p {
+    .center .div1 .left p {
+        margin: 0px 0px 20px;
         font-size: 12px;
-        margin-bottom: 20px;
+        line-height: 18px;
     }
 
-    section .center .div1 .left img {
-        width: 146px;
-        height: 146px;
-    }
-
-    section .center .div2 {
+    .center .div2 {
         flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-top: 10px;
+        width: 72%;
+        max-width: 200px;
     }
 
-    section .center .div2 img {
+    .center .div2 img {
         display: none;
     }
 
-    section .center .div2 div {
-        width: 40%;
-        margin-top: 30px;
+    .center .div2 div {
+        margin-bottom: 34px;
     }
 
-    section .center .div2 div h5 {
-        font-size: 12px;
+    .center .div2 div h5 {
+        font-size: 15px;
+        line-height: 19.5px;
     }
 
-    section .center .div2 div p {
-        width: 85px;
-        font-size: 10px;
+    .center .div2 div p {
+        font-size: 11px;
+        line-height: 14.3px;
+        width: 90px;
     }
 }
+
+@media screen and (min-width: 1179px) and (max-width: 1496px) {
+    .center img {
+        width: 30%;
+    }
+}
+
+
+
